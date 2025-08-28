@@ -1,0 +1,6 @@
+endpoints:
+  hostA:
+    vlan: 10
+    ip: 192.168.10.10/24
+    gw: 192.168.10.254/24
+    app_profile: HTTP

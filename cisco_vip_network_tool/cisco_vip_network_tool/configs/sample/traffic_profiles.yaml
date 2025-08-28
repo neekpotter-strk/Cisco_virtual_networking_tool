@@ -1,0 +1,7 @@
+profiles:
+  HTTP:
+    regular_kbps: 500
+    peak_kbps: 1500
+  VoIP:
+    regular_kbps: 100
+    peak_kbps: 200

@@ -1,0 +1,16 @@
+hostname R2
+!
+interface GigabitEthernet0/0
+ description LINK:R1:Gi0/0-R2:Gi0/0
+ ip address 10.0.12.2 255.255.255.0
+ mtu 1400
+ bandwidth 100000
+!
+interface GigabitEthernet0/1
+ description LINK:R2:Gi0/1-SW1:Gi0/1
+ mtu 1500
+ bandwidth 100000
+!
+router ospf 1
+ network 10.0.12.0 0.0.0.255 area 0
+!

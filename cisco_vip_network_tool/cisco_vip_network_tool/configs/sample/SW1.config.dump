@@ -1,0 +1,13 @@
+hostname SW1
+!
+vlan 10
+ name Users
+!
+interface GigabitEthernet0/1
+ description LINK:R2:Gi0/1-SW1:Gi0/1
+ switchport access vlan 10
+ mtu 1500
+!
+interface Vlan10
+ ip address 192.168.10.254 255.255.255.0
+!
